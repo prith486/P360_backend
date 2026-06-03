@@ -1,0 +1,1366 @@
+﻿{
+  "step_2": {
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "id": "5a535b69-1ff4-403b-a8cc-0f6f214004d7",
+        "title": "DSA Fundamentals Test",
+        "description": "Covers arrays, linked lists, trees",
+        "status": "draft",
+        "is_published": false,
+        "created_by": "00000000-0000-0000-0000-000000000002",
+        "created_at": "2026-03-14T11:57:23.135930+00:00",
+        "type": "placement_test",
+        "duration": 60,
+        "maxScore": 100,
+        "passingScore": 40,
+        "departments": [
+          "computer_science"
+        ],
+        "batches": [
+          "fourth"
+        ],
+        "shuffleQuestions": false,
+        "showResultsImmediately": false,
+        "minCGPA": null,
+        "totalQuestions": 0,
+        "slug": "dsa-fundamentals-test-0061c6d7",
+        "is_active": true,
+        "date": null,
+        "time": null,
+        "registrationDeadline": null
+      }
+    }
+  },
+  "step_3": {
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "id": "d50c94b3-a000-406f-addf-29a2a029852a",
+          "title": "stfyghjk",
+          "description": "wertyhjk",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-13T21:13:48.136075+00:00",
+          "type": "MCQ",
+          "duration": 44,
+          "maxScore": 10,
+          "passingScore": 60,
+          "departments": [
+            "IT",
+            "CS",
+            "Civil",
+            "Mech"
+          ],
+          "batches": [
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 7.0,
+          "totalQuestions": 1,
+          "slug": "stfyghjk-36515c26",
+          "is_active": true,
+          "date": "2026-03-15",
+          "time": "02:43:00",
+          "registrationDeadline": "2026-03-16T00:00:00Z",
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "08f1cb64-ad84-438a-b516-04969b4204e1",
+          "title": "dsa to do by evveryone",
+          "description": "asdfgvhb",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T10:32:37.981396+00:00",
+          "type": "Coding",
+          "duration": 45,
+          "maxScore": 10,
+          "passingScore": 60,
+          "departments": [
+            "IT",
+            "CS",
+            "ECE"
+          ],
+          "batches": [
+            "2021",
+            "2023",
+            "2024",
+            "2022"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 6.0,
+          "totalQuestions": 1,
+          "slug": "dsa-to-do-by-evveryone-ef6060cc",
+          "is_active": true,
+          "date": "2026-03-15",
+          "time": "20:02:00",
+          "registrationDeadline": "2026-03-16T00:00:00Z",
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "232271e4-8a2f-407e-b466-1896292813ce",
+          "title": "hehehe",
+          "description": "sdfgh",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-13T21:03:36.526933+00:00",
+          "type": "Coding",
+          "duration": 45,
+          "maxScore": 10,
+          "passingScore": 60,
+          "departments": [
+            "CS",
+            "IT",
+            "ECE"
+          ],
+          "batches": [
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 8.0,
+          "totalQuestions": 1,
+          "slug": "hehehe-07ef08c1",
+          "is_active": true,
+          "date": "2026-03-14",
+          "time": "05:33:00",
+          "registrationDeadline": "2026-03-15T00:00:00Z",
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "80218ee4-d60b-4324-8e76-c3cd2c912895",
+          "title": "hehehe",
+          "description": "sdfgh",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-13T21:03:59.746535+00:00",
+          "type": "Coding",
+          "duration": 45,
+          "maxScore": 10,
+          "passingScore": 60,
+          "departments": [
+            "CS",
+            "IT",
+            "ECE"
+          ],
+          "batches": [
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 8.0,
+          "totalQuestions": 1,
+          "slug": "hehehe-1715b376",
+          "is_active": true,
+          "date": "2026-03-14",
+          "time": "05:33:00",
+          "registrationDeadline": "2026-03-15T00:00:00Z",
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "f7309093-43d8-475d-995d-b30581d7e32a",
+          "title": "hehehe",
+          "description": "sdfgh",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-13T21:11:29.596322+00:00",
+          "type": "Coding",
+          "duration": 45,
+          "maxScore": 10,
+          "passingScore": 60,
+          "departments": [
+            "CS",
+            "IT",
+            "ECE"
+          ],
+          "batches": [
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 8.0,
+          "totalQuestions": 1,
+          "slug": "hehehe-157d76eb",
+          "is_active": true,
+          "date": "2026-03-14",
+          "time": "05:33:00",
+          "registrationDeadline": "2026-03-15T00:00:00Z",
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "50c1a456-01e1-4e61-ae72-403f3ed60d20",
+          "title": "system design",
+          "description": "qwesdrftgh",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:11:05.456762+00:00",
+          "type": "Mixed",
+          "duration": 56,
+          "maxScore": 100,
+          "passingScore": 60,
+          "departments": [
+            "CS"
+          ],
+          "batches": [
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 8.0,
+          "totalQuestions": 0,
+          "slug": "system-design--523e9af7",
+          "is_active": true,
+          "date": "2026-03-15",
+          "time": "20:40:00",
+          "registrationDeadline": "2026-03-15T00:00:00Z",
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "f63720b7-8354-40f4-ae2a-1f7806b57588",
+          "title": "heelloooo",
+          "description": "sfghnm",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:32:39.517048+00:00",
+          "type": "Coding",
+          "duration": 55,
+          "maxScore": 100,
+          "passingScore": 60,
+          "departments": [
+            "CS"
+          ],
+          "batches": [
+            "2021",
+            "2024",
+            "2023",
+            "2022"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 6.0,
+          "totalQuestions": 0,
+          "slug": "heelloooo-610d03e5",
+          "is_active": true,
+          "date": "2026-03-15",
+          "time": "21:02:00",
+          "registrationDeadline": "2026-03-16T00:00:00Z",
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "f41c8f7a-cbd8-47bc-bde5-9dbc2ac55e7e",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "draft",
+          "is_published": false,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:51:10.828037+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 100,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 0,
+          "slug": "dsa-fundamentals-test-cdad6c43",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "779d524e-8708-4169-9920-852f6cb9674a",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "draft",
+          "is_published": false,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:51:11.827330+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 100,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 0,
+          "slug": "dsa-fundamentals-test-f7c77b6a",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "d19e03d2-ed1b-4f67-81cf-07e3ac2d5399",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "draft",
+          "is_published": false,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:51:11.843717+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 100,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 0,
+          "slug": "dsa-fundamentals-test-557473a4",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "ac4cdf21-7b8a-428f-89e1-3b238b855723",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "draft",
+          "is_published": false,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:51:26.856410+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 100,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 0,
+          "slug": "dsa-fundamentals-test-af848716",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "157de9e4-02fc-44fb-b0d9-487eb39eb335",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "draft",
+          "is_published": false,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:53:06.633903+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 110,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 1,
+          "slug": "dsa-fundamentals-test-aec35a2a",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "f028c958-9b22-41d3-bddd-74ce957d897d",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "draft",
+          "is_published": false,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:53:30.472360+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 110,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 1,
+          "slug": "dsa-fundamentals-test-56931320",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "69115ac2-8147-4fa7-9377-7d52652a5252",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:54:34.222074+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 110,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 1,
+          "slug": "dsa-fundamentals-test-457c2e4f",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "eb488f1c-a1a3-41d4-874b-7b8aa437f322",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:55:06.953397+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 110,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 1,
+          "slug": "dsa-fundamentals-test-089786c0",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "75d3ba2b-7c8c-49ab-a139-cc53edab6614",
+          "title": "Debug Test 2777708925344",
+          "description": "Debug Test Desc",
+          "status": "draft",
+          "is_published": false,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:56:14.801614+00:00",
+          "type": "Coding",
+          "duration": 60,
+          "maxScore": 100,
+          "passingScore": 40,
+          "departments": null,
+          "batches": null,
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 0,
+          "slug": "debug-test-2777708925344-6c50f97d",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "1ef4fc31-95a0-4df0-8c5e-ff3f3bddb7c9",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:56:30.295585+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 110,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 1,
+          "slug": "dsa-fundamentals-test-550e3081",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        },
+        {
+          "id": "5a535b69-1ff4-403b-a8cc-0f6f214004d7",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "draft",
+          "is_published": false,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:57:23.135930+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 100,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 0,
+          "slug": "dsa-fundamentals-test-0061c6d7",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "participants": 0,
+          "avgScore": 0.0
+        }
+      ]
+    }
+  },
+  "step_4": {
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "title": "Two Sum",
+        "slug": "two-sum-c059e679",
+        "difficulty": "easy",
+        "question_type": "coding",
+        "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Description min 20 chars)",
+        "id": "c7db3c1a-2f82-40ba-8f7e-f5338dc74169",
+        "sample_test_cases": [
+          {
+            "input": "4\n2 7 11 15\n9",
+            "output": "0 1",
+            "explanation": "nums[0] + nums[1] = 9"
+          }
+        ],
+        "starter_code": {
+          "cpp": "vector<int> twoSum(vector<int>& nums, int target) {\n    \n}",
+          "java": "public int[] twoSum(int[] nums, int target) {\n    \n}",
+          "python": "def twoSum(nums, target):\n    pass",
+          "javascript": "var twoSum = function(nums, target) {\n    \n};"
+        },
+        "hints": null,
+        "tags": [
+          "arrays",
+          "hash-map"
+        ],
+        "companies": null,
+        "max_score": 10,
+        "time_limit_seconds": 2,
+        "memory_limit_mb": 256,
+        "total_submissions": 0,
+        "total_accepted": 0,
+        "acceptance_rate": "0.00",
+        "is_public": true,
+        "created_at": "2026-03-14T11:57:30.681348Z"
+      }
+    }
+  },
+  "step_5": {
+    "status": 200,
+    "response": {
+      "success": true,
+      "message": "Question added successfully"
+    },
+    "request": {
+      "question_id": "c7db3c1a-2f82-40ba-8f7e-f5338dc74169",
+      "marks": 10,
+      "question_order": 1
+    }
+  },
+  "step_6": {
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "id": "d50c94b3-a000-406f-addf-29a2a029852a",
+          "title": "stfyghjk",
+          "description": "wertyhjk",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-13T21:13:48.136075+00:00",
+          "type": "MCQ",
+          "duration": 44,
+          "maxScore": 10,
+          "passingScore": 60,
+          "departments": [
+            "IT",
+            "CS",
+            "Civil",
+            "Mech"
+          ],
+          "batches": [
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 7.0,
+          "totalQuestions": 1,
+          "slug": "stfyghjk-36515c26",
+          "is_active": true,
+          "date": "2026-03-15",
+          "time": "02:43:00",
+          "registrationDeadline": "2026-03-16T00:00:00Z",
+          "totalParticipants": 0,
+          "score": null,
+          "result": null,
+          "timeTaken": null,
+          "rank": null
+        },
+        {
+          "id": "08f1cb64-ad84-438a-b516-04969b4204e1",
+          "title": "dsa to do by evveryone",
+          "description": "asdfgvhb",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T10:32:37.981396+00:00",
+          "type": "Coding",
+          "duration": 45,
+          "maxScore": 10,
+          "passingScore": 60,
+          "departments": [
+            "IT",
+            "CS",
+            "ECE"
+          ],
+          "batches": [
+            "2021",
+            "2023",
+            "2024",
+            "2022"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 6.0,
+          "totalQuestions": 1,
+          "slug": "dsa-to-do-by-evveryone-ef6060cc",
+          "is_active": true,
+          "date": "2026-03-15",
+          "time": "20:02:00",
+          "registrationDeadline": "2026-03-16T00:00:00Z",
+          "totalParticipants": 0,
+          "score": null,
+          "result": null,
+          "timeTaken": null,
+          "rank": null
+        },
+        {
+          "id": "232271e4-8a2f-407e-b466-1896292813ce",
+          "title": "hehehe",
+          "description": "sdfgh",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-13T21:03:36.526933+00:00",
+          "type": "Coding",
+          "duration": 45,
+          "maxScore": 10,
+          "passingScore": 60,
+          "departments": [
+            "CS",
+            "IT",
+            "ECE"
+          ],
+          "batches": [
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 8.0,
+          "totalQuestions": 1,
+          "slug": "hehehe-07ef08c1",
+          "is_active": true,
+          "date": "2026-03-14",
+          "time": "05:33:00",
+          "registrationDeadline": "2026-03-15T00:00:00Z",
+          "totalParticipants": 0,
+          "score": null,
+          "result": null,
+          "timeTaken": null,
+          "rank": null
+        },
+        {
+          "id": "80218ee4-d60b-4324-8e76-c3cd2c912895",
+          "title": "hehehe",
+          "description": "sdfgh",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-13T21:03:59.746535+00:00",
+          "type": "Coding",
+          "duration": 45,
+          "maxScore": 10,
+          "passingScore": 60,
+          "departments": [
+            "CS",
+            "IT",
+            "ECE"
+          ],
+          "batches": [
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 8.0,
+          "totalQuestions": 1,
+          "slug": "hehehe-1715b376",
+          "is_active": true,
+          "date": "2026-03-14",
+          "time": "05:33:00",
+          "registrationDeadline": "2026-03-15T00:00:00Z",
+          "totalParticipants": 0,
+          "score": null,
+          "result": null,
+          "timeTaken": null,
+          "rank": null
+        },
+        {
+          "id": "f7309093-43d8-475d-995d-b30581d7e32a",
+          "title": "hehehe",
+          "description": "sdfgh",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-13T21:11:29.596322+00:00",
+          "type": "Coding",
+          "duration": 45,
+          "maxScore": 10,
+          "passingScore": 60,
+          "departments": [
+            "CS",
+            "IT",
+            "ECE"
+          ],
+          "batches": [
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 8.0,
+          "totalQuestions": 1,
+          "slug": "hehehe-157d76eb",
+          "is_active": true,
+          "date": "2026-03-14",
+          "time": "05:33:00",
+          "registrationDeadline": "2026-03-15T00:00:00Z",
+          "totalParticipants": 0,
+          "score": null,
+          "result": null,
+          "timeTaken": null,
+          "rank": null
+        },
+        {
+          "id": "50c1a456-01e1-4e61-ae72-403f3ed60d20",
+          "title": "system design",
+          "description": "qwesdrftgh",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:11:05.456762+00:00",
+          "type": "Mixed",
+          "duration": 56,
+          "maxScore": 100,
+          "passingScore": 60,
+          "departments": [
+            "CS"
+          ],
+          "batches": [
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 8.0,
+          "totalQuestions": 0,
+          "slug": "system-design--523e9af7",
+          "is_active": true,
+          "date": "2026-03-15",
+          "time": "20:40:00",
+          "registrationDeadline": "2026-03-15T00:00:00Z",
+          "totalParticipants": 0,
+          "score": null,
+          "result": null,
+          "timeTaken": null,
+          "rank": null
+        },
+        {
+          "id": "f63720b7-8354-40f4-ae2a-1f7806b57588",
+          "title": "heelloooo",
+          "description": "sfghnm",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:32:39.517048+00:00",
+          "type": "Coding",
+          "duration": 55,
+          "maxScore": 100,
+          "passingScore": 60,
+          "departments": [
+            "CS"
+          ],
+          "batches": [
+            "2021",
+            "2024",
+            "2023",
+            "2022"
+          ],
+          "shuffleQuestions": true,
+          "showResultsImmediately": true,
+          "minCGPA": 6.0,
+          "totalQuestions": 0,
+          "slug": "heelloooo-610d03e5",
+          "is_active": true,
+          "date": "2026-03-15",
+          "time": "21:02:00",
+          "registrationDeadline": "2026-03-16T00:00:00Z",
+          "totalParticipants": 0,
+          "score": null,
+          "result": null,
+          "timeTaken": null,
+          "rank": null
+        },
+        {
+          "id": "69115ac2-8147-4fa7-9377-7d52652a5252",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:54:34.222074+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 110,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 1,
+          "slug": "dsa-fundamentals-test-457c2e4f",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "totalParticipants": 0,
+          "score": null,
+          "result": null,
+          "timeTaken": null,
+          "rank": null
+        },
+        {
+          "id": "eb488f1c-a1a3-41d4-874b-7b8aa437f322",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:55:06.953397+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 110,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 1,
+          "slug": "dsa-fundamentals-test-089786c0",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "totalParticipants": 0,
+          "score": null,
+          "result": null,
+          "timeTaken": null,
+          "rank": null
+        },
+        {
+          "id": "1ef4fc31-95a0-4df0-8c5e-ff3f3bddb7c9",
+          "title": "DSA Fundamentals Test",
+          "description": "Covers arrays, linked lists, trees",
+          "status": "scheduled",
+          "is_published": true,
+          "created_by": "00000000-0000-0000-0000-000000000002",
+          "created_at": "2026-03-14T11:56:30.295585+00:00",
+          "type": "placement_test",
+          "duration": 60,
+          "maxScore": 110,
+          "passingScore": 40,
+          "departments": [
+            "computer_science"
+          ],
+          "batches": [
+            "fourth"
+          ],
+          "shuffleQuestions": false,
+          "showResultsImmediately": false,
+          "minCGPA": null,
+          "totalQuestions": 1,
+          "slug": "dsa-fundamentals-test-550e3081",
+          "is_active": true,
+          "date": null,
+          "time": null,
+          "registrationDeadline": null,
+          "totalParticipants": 0,
+          "score": null,
+          "result": null,
+          "timeTaken": null,
+          "rank": null
+        }
+      ]
+    }
+  },
+  "step_3_1": {
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "id": "5a535b69-1ff4-403b-a8cc-0f6f214004d7",
+        "title": "DSA Fundamentals Test",
+        "description": "Covers arrays, linked lists, trees",
+        "status": "draft",
+        "is_published": false,
+        "created_by": "00000000-0000-0000-0000-000000000002",
+        "created_at": "2026-03-14T11:57:23.135930+00:00",
+        "type": "placement_test",
+        "duration": 60,
+        "maxScore": 110,
+        "passingScore": 40,
+        "departments": [
+          "computer_science"
+        ],
+        "batches": [
+          "fourth"
+        ],
+        "shuffleQuestions": false,
+        "showResultsImmediately": false,
+        "minCGPA": null,
+        "totalQuestions": 1,
+        "slug": "dsa-fundamentals-test-0061c6d7",
+        "is_active": true,
+        "date": null,
+        "time": null,
+        "registrationDeadline": null,
+        "participants": 0,
+        "avgScore": 0.0,
+        "questions": [
+          {
+            "title": "Two Sum",
+            "slug": "two-sum-c059e679",
+            "difficulty": "easy",
+            "question_type": "coding",
+            "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Description min 20 chars)",
+            "id": "c7db3c1a-2f82-40ba-8f7e-f5338dc74169",
+            "sample_test_cases": [
+              {
+                "input": "4\n2 7 11 15\n9",
+                "output": "0 1",
+                "explanation": "nums[0] + nums[1] = 9"
+              }
+            ],
+            "starter_code": {
+              "cpp": "vector<int> twoSum(vector<int>& nums, int target) {\n    \n}",
+              "java": "public int[] twoSum(int[] nums, int target) {\n    \n}",
+              "python": "def twoSum(nums, target):\n    pass",
+              "javascript": "var twoSum = function(nums, target) {\n    \n};"
+            },
+            "hints": null,
+            "tags": [
+              "arrays",
+              "hash-map"
+            ],
+            "companies": null,
+            "max_score": 10,
+            "time_limit_seconds": 2,
+            "memory_limit_mb": 256,
+            "total_submissions": 0,
+            "total_accepted": 0,
+            "acceptance_rate": "0.00",
+            "is_public": true,
+            "created_at": "2026-03-14T11:57:30.681348Z",
+            "marks": 10,
+            "question_order": 1
+          }
+        ]
+      }
+    }
+  },
+  "step_5_1": {
+    "status": 200,
+    "response": {
+      "success": true,
+      "message": "Assessment published successfully"
+    }
+  },
+  "step_8": {
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": [
+        {
+          "title": "Reverse a Linked List",
+          "slug": "reverse-linked-list-3bcc",
+          "difficulty": "easy",
+          "question_type": "coding",
+          "description": "Reverse a singly linked list.",
+          "id": "d89fc218-09b6-4843-875d-3e356df535da",
+          "sample_test_cases": [],
+          "starter_code": {},
+          "hints": [],
+          "tags": [],
+          "companies": [],
+          "max_score": 100,
+          "time_limit_seconds": 2,
+          "memory_limit_mb": 256,
+          "total_submissions": 0,
+          "total_accepted": 0,
+          "acceptance_rate": "0.00",
+          "is_public": true,
+          "created_at": "2026-03-14T10:58:12.798026Z"
+        },
+        {
+          "title": "Two Sum",
+          "slug": "two-sum-bbfb4fe9",
+          "difficulty": "easy",
+          "question_type": "coding",
+          "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Min 20 chars for validation)",
+          "id": "80b02179-79de-424f-9b87-0eb50214bb42",
+          "sample_test_cases": [
+            {
+              "input": "4\n2 7 11 15\n9",
+              "output": "0 1",
+              "explanation": "nums[0] + nums[1] = 9"
+            }
+          ],
+          "starter_code": {
+            "cpp": "vector<int> twoSum(vector<int>& nums, int target) {\n    \n}",
+            "java": "public int[] twoSum(int[] nums, int target) {\n    \n}",
+            "python": "def twoSum(nums, target):\n    pass",
+            "javascript": "var twoSum = function(nums, target) {\n    \n};"
+          },
+          "hints": null,
+          "tags": [
+            "arrays",
+            "hash-map"
+          ],
+          "companies": null,
+          "max_score": 10,
+          "time_limit_seconds": 2,
+          "memory_limit_mb": 256,
+          "total_submissions": 0,
+          "total_accepted": 0,
+          "acceptance_rate": "0.00",
+          "is_public": true,
+          "created_at": "2026-03-14T11:53:30.252007Z"
+        },
+        {
+          "title": "Two Sum",
+          "slug": "two-sum-1827bc20",
+          "difficulty": "easy",
+          "question_type": "coding",
+          "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Min 20 chars for validation)",
+          "id": "13995a44-acfa-4c50-8f71-0fd7b109fd31",
+          "sample_test_cases": [
+            {
+              "input": "4\n2 7 11 15\n9",
+              "output": "0 1",
+              "explanation": "nums[0] + nums[1] = 9"
+            }
+          ],
+          "starter_code": {
+            "cpp": "vector<int> twoSum(vector<int>& nums, int target) {\n    \n}",
+            "java": "public int[] twoSum(int[] nums, int target) {\n    \n}",
+            "python": "def twoSum(nums, target):\n    pass",
+            "javascript": "var twoSum = function(nums, target) {\n    \n};"
+          },
+          "hints": null,
+          "tags": [
+            "arrays",
+            "hash-map"
+          ],
+          "companies": null,
+          "max_score": 10,
+          "time_limit_seconds": 2,
+          "memory_limit_mb": 256,
+          "total_submissions": 0,
+          "total_accepted": 0,
+          "acceptance_rate": "0.00",
+          "is_public": true,
+          "created_at": "2026-03-14T11:53:36.427157Z"
+        },
+        {
+          "title": "Two Sum",
+          "slug": "two-sum-6b3aab76",
+          "difficulty": "easy",
+          "question_type": "coding",
+          "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Description min 20 chars)",
+          "id": "8ed808f8-7d89-4a31-81f3-4cd4a171d8a8",
+          "sample_test_cases": [
+            {
+              "input": "4\n2 7 11 15\n9",
+              "output": "0 1",
+              "explanation": "nums[0] + nums[1] = 9"
+            }
+          ],
+          "starter_code": {
+            "cpp": "vector<int> twoSum(vector<int>& nums, int target) {\n    \n}",
+            "java": "public int[] twoSum(int[] nums, int target) {\n    \n}",
+            "python": "def twoSum(nums, target):\n    pass",
+            "javascript": "var twoSum = function(nums, target) {\n    \n};"
+          },
+          "hints": null,
+          "tags": [
+            "arrays",
+            "hash-map"
+          ],
+          "companies": null,
+          "max_score": 10,
+          "time_limit_seconds": 2,
+          "memory_limit_mb": 256,
+          "total_submissions": 0,
+          "total_accepted": 0,
+          "acceptance_rate": "0.00",
+          "is_public": true,
+          "created_at": "2026-03-14T11:54:46.826049Z"
+        },
+        {
+          "title": "Two Sum",
+          "slug": "two-sum-214196a6",
+          "difficulty": "easy",
+          "question_type": "coding",
+          "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Description min 20 chars)",
+          "id": "2db9ae64-4fd7-4d5b-be76-8c1fdb7fdb0a",
+          "sample_test_cases": [
+            {
+              "input": "4\n2 7 11 15\n9",
+              "output": "0 1",
+              "explanation": "nums[0] + nums[1] = 9"
+            }
+          ],
+          "starter_code": {
+            "cpp": "vector<int> twoSum(vector<int>& nums, int target) {\n    \n}",
+            "java": "public int[] twoSum(int[] nums, int target) {\n    \n}",
+            "python": "def twoSum(nums, target):\n    pass",
+            "javascript": "var twoSum = function(nums, target) {\n    \n};"
+          },
+          "hints": null,
+          "tags": [
+            "arrays",
+            "hash-map"
+          ],
+          "companies": null,
+          "max_score": 10,
+          "time_limit_seconds": 2,
+          "memory_limit_mb": 256,
+          "total_submissions": 0,
+          "total_accepted": 0,
+          "acceptance_rate": "0.00",
+          "is_public": true,
+          "created_at": "2026-03-14T11:55:13.021163Z"
+        },
+        {
+          "title": "Two Sum",
+          "slug": "two-sum-342094e5",
+          "difficulty": "easy",
+          "question_type": "coding",
+          "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Description min 20 chars)",
+          "id": "48af3e6d-c668-470d-b29f-d4b54c86bfe7",
+          "sample_test_cases": [
+            {
+              "input": "4\n2 7 11 15\n9",
+              "output": "0 1",
+              "explanation": "nums[0] + nums[1] = 9"
+            }
+          ],
+          "starter_code": {
+            "cpp": "vector<int> twoSum(vector<int>& nums, int target) {\n    \n}",
+            "java": "public int[] twoSum(int[] nums, int target) {\n    \n}",
+            "python": "def twoSum(nums, target):\n    pass",
+            "javascript": "var twoSum = function(nums, target) {\n    \n};"
+          },
+          "hints": null,
+          "tags": [
+            "arrays",
+            "hash-map"
+          ],
+          "companies": null,
+          "max_score": 10,
+          "time_limit_seconds": 2,
+          "memory_limit_mb": 256,
+          "total_submissions": 0,
+          "total_accepted": 0,
+          "acceptance_rate": "0.00",
+          "is_public": true,
+          "created_at": "2026-03-14T11:56:36.631156Z"
+        },
+        {
+          "title": "Two Sum",
+          "slug": "two-sum-c059e679",
+          "difficulty": "easy",
+          "question_type": "coding",
+          "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Description min 20 chars)",
+          "id": "c7db3c1a-2f82-40ba-8f7e-f5338dc74169",
+          "sample_test_cases": [
+            {
+              "input": "4\n2 7 11 15\n9",
+              "output": "0 1",
+              "explanation": "nums[0] + nums[1] = 9"
+            }
+          ],
+          "starter_code": {
+            "cpp": "vector<int> twoSum(vector<int>& nums, int target) {\n    \n}",
+            "java": "public int[] twoSum(int[] nums, int target) {\n    \n}",
+            "python": "def twoSum(nums, target):\n    pass",
+            "javascript": "var twoSum = function(nums, target) {\n    \n};"
+          },
+          "hints": null,
+          "tags": [
+            "arrays",
+            "hash-map"
+          ],
+          "companies": null,
+          "max_score": 10,
+          "time_limit_seconds": 2,
+          "memory_limit_mb": 256,
+          "total_submissions": 0,
+          "total_accepted": 0,
+          "acceptance_rate": "0.00",
+          "is_public": true,
+          "created_at": "2026-03-14T11:57:30.681348Z"
+        }
+      ]
+    }
+  },
+  "summary_table": {
+    "1. POST /assessments/": "YES",
+    "2. GET /assessments/": "YES",
+    "4. GET /assessments/my": "YES",
+    "6. POST /assessments/{id}/questions": "YES",
+    "7. POST /questions/": "YES",
+    "3. GET /assessments/{id}": "YES",
+    "5. PATCH /assessments/{id}/publish": "YES",
+    "8. GET /questions/": "YES"
+  }
+}

@@ -1,0 +1,18 @@
+from enum import Enum
+
+class ErrorCode(str, Enum):
+    # Student errors
+    STUDENT_NOT_FOUND = "STUDENT_NOT_FOUND"
+    
+    # Validation errors
+    VALIDATION_ERROR = "VALIDATION_ERROR"
+    INVALID_INPUT = "INVALID_INPUT"
+    INVALID_FORMAT = "INVALID_FORMAT"
+    CONSTRAINT_VIOLATION = "CONSTRAINT_VIOLATION"
+    
+    # Database errors
+    DATABASE_ERROR = "DATABASE_ERROR"
+    
+    # Auth errors
+    INSUFFICIENT_PERMISSIONS = "INSUFFICIENT_PERMISSIONS"
+    UNAUTHORIZED = "UNAUTHORIZED"

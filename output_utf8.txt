@@ -1,0 +1,137 @@
+=== STUDENTS TABLE ===
+  user_id: uuid
+  roll_number: character varying
+  branch: USER-DEFINED
+  batch_year: integer
+  current_year: USER-DEFINED
+  section: character varying
+  cgpa: numeric
+  sgpa_sem1: numeric
+  sgpa_sem2: numeric
+  sgpa_sem3: numeric
+  sgpa_sem4: numeric
+  sgpa_sem5: numeric
+  sgpa_sem6: numeric
+  sgpa_sem7: numeric
+  sgpa_sem8: numeric
+  total_backlogs: integer
+  active_backlogs: integer
+  total_problems_solved: integer
+  easy_solved: integer
+  medium_solved: integer
+  hard_solved: integer
+  leetcode_username: character varying
+  codeforces_username: character varying
+  codechef_username: character varying
+  geeksforgeeks_username: character varying
+  hackerrank_username: character varying
+  github_username: character varying
+  leetcode_stats: jsonb
+  codeforces_stats: jsonb
+  codechef_stats: jsonb
+  geeksforgeeks_stats: jsonb
+  hackerrank_stats: jsonb
+  skills: jsonb
+  preferred_roles: jsonb
+  languages_known: jsonb
+  readiness_score: numeric
+  last_assessment_date: timestamp with time zone
+  last_score_update: timestamp with time zone
+  profile_completion_percent: numeric
+  personal_email: character varying
+  resume_url: character varying
+  linkedin_url: character varying
+  github_url: character varying
+  portfolio_url: character varying
+  is_placement_ready: boolean
+  expected_ctc_min: numeric
+  expected_ctc_max: numeric
+  willing_to_relocate: boolean
+  id: uuid
+  created_at: timestamp with time zone
+  updated_at: timestamp with time zone
+  github_stats: jsonb
+
+=== ASSESSMENT_ATTEMPTS TABLE ===
+  student_id: uuid
+  assessment_id: uuid
+  attempt_number: integer
+  started_at: timestamp with time zone
+  submitted_at: timestamp with time zone
+  time_taken_minutes: integer
+  total_score: numeric
+  max_score: integer
+  percentage: numeric
+  is_passed: boolean
+  questions_attempted: integer
+  questions_correct: integer
+  question_scores: jsonb
+  proctoring_events: jsonb
+  tab_switch_count: integer
+  is_submitted: boolean
+  is_graded: boolean
+  rank: integer
+  feedback: text
+  id: uuid
+  created_at: timestamp with time zone
+  updated_at: timestamp with time zone
+  violation_flag: boolean
+  violation_reason: text
+
+=== ASSESSMENTS TABLE ===
+  title: character varying
+  slug: character varying
+  description: text
+  assessment_type: USER-DEFINED
+  duration_minutes: integer
+  start_time: timestamp with time zone
+  end_time: timestamp with time zone
+  total_marks: integer
+  passing_marks: integer
+  is_public: boolean
+  is_published: boolean
+  is_active: boolean
+  target_branches: ARRAY
+  target_years: ARRAY
+  target_students: ARRAY
+  max_attempts: integer
+  allow_late_submission: boolean
+  late_penalty_percent: numeric
+  enable_proctoring: boolean
+  require_webcam: boolean
+  track_tab_switches: boolean
+  instructions: text
+  rules: jsonb
+  total_questions: integer
+  total_attempts: integer
+  average_score: numeric
+  created_by: uuid
+  id: uuid
+  created_at: timestamp with time zone
+  updated_at: timestamp with time zone
+  status: character varying
+  registration_deadline: timestamp with time zone
+  shuffle_questions: boolean
+  show_results_immediately: boolean
+  min_cgpa: numeric
+  tab_switch_limit: integer
+
+=== SAMPLE STUDENTS ===
+  b9bbbb20-1b50-4553-9d27-f8ed4c445bdc CS21B002: cgpa=None, readiness=0.00, problems=0, completion=10.00, has_lc=True, has_gh=True
+  7b76d3de-06af-435d-8b8d-cf4b8592e7ff IT21B001: cgpa=None, readiness=0.00, problems=0, completion=10.00, has_lc=True, has_gh=True
+  71230fe2-d6f5-49b7-a0b4-435759e0814e CS21B003: cgpa=None, readiness=0.00, problems=0, completion=10.00, has_lc=True, has_gh=True
+  f6cc6aa8-3351-48e7-a50b-e5bbe7250785 CS22B001: cgpa=None, readiness=0.00, problems=3822, completion=10.00, has_lc=True, has_gh=True
+  591b3dab-f507-4760-b020-5c7698a70d9b TEST4211: cgpa=8.50, readiness=0.00, problems=0, completion=15.00, has_lc=True, has_gh=True
+  00000000-0000-0000-0000-000000000001 CS21B001: cgpa=9.60, readiness=78.50, problems=9, completion=65.00, has_lc=True, has_gh=True
+
+=== SAMPLE ATTEMPTS ===
+  00000000-0000-0000-0000-000000000001: score=0.00/60, submitted=2026-03-14 12:20:30.037768+00:00
+  00000000-0000-0000-0000-000000000001: score=0.00/60, submitted=2026-03-14 15:17:04.269084+00:00
+  00000000-0000-0000-0000-000000000001: score=0.00/130, submitted=2026-03-14 17:00:22.728646+00:00
+  00000000-0000-0000-0000-000000000001: score=0.00/130, submitted=2026-03-14 17:01:22.908050+00:00
+  00000000-0000-0000-0000-000000000001: score=0.00/110, submitted=2026-03-14 18:27:24.749394+00:00
+  00000000-0000-0000-0000-000000000001: score=0.00/210, submitted=2026-03-14 18:41:25.441329+00:00
+  00000000-0000-0000-0000-000000000001: score=0.00/210, submitted=2026-03-14 19:08:34.848154+00:00
+  00000000-0000-0000-0000-000000000001: score=0.00/210, submitted=2026-03-14 19:09:04.088627+00:00
+  00000000-0000-0000-0000-000000000001: score=0.00/210, submitted=2026-03-14 19:10:23.148955+00:00
+  00000000-0000-0000-0000-000000000001: score=0.00/100, submitted=2026-03-14 20:52:35.672457+00:00

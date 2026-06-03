@@ -1,0 +1,287 @@
+﻿--- SCHEMA DUMP ---
+
+TABLE: students
+  - user_id (UUID): NOT NULL  [FK -> users.id]
+  - roll_number (VARCHAR(50)): NOT NULL  
+  - branch (VARCHAR(22)): NOT NULL  
+  - batch_year (INTEGER): NOT NULL  
+  - current_year (VARCHAR(6)): NOT NULL  
+  - section (VARCHAR(10)): NULL  
+  - cgpa (NUMERIC(4, 2)): NULL  
+  - sgpa_sem1 (NUMERIC(4, 2)): NULL  
+  - sgpa_sem2 (NUMERIC(4, 2)): NULL  
+  - sgpa_sem3 (NUMERIC(4, 2)): NULL  
+  - sgpa_sem4 (NUMERIC(4, 2)): NULL  
+  - sgpa_sem5 (NUMERIC(4, 2)): NULL  
+  - sgpa_sem6 (NUMERIC(4, 2)): NULL  
+  - sgpa_sem7 (NUMERIC(4, 2)): NULL  
+  - sgpa_sem8 (NUMERIC(4, 2)): NULL  
+  - total_backlogs (INTEGER): NOT NULL DEFAULT 0 
+  - active_backlogs (INTEGER): NOT NULL DEFAULT 0 
+  - total_problems_solved (INTEGER): NOT NULL DEFAULT 0 
+  - easy_solved (INTEGER): NOT NULL DEFAULT 0 
+  - medium_solved (INTEGER): NOT NULL DEFAULT 0 
+  - hard_solved (INTEGER): NOT NULL DEFAULT 0 
+  - leetcode_username (VARCHAR(100)): NULL  
+  - codeforces_username (VARCHAR(100)): NULL  
+  - codechef_username (VARCHAR(100)): NULL  
+  - geeksforgeeks_username (VARCHAR(100)): NULL  
+  - hackerrank_username (VARCHAR(100)): NULL  
+  - github_username (VARCHAR(100)): NULL  
+  - leetcode_stats (JSONB): NULL  
+  - codeforces_stats (JSONB): NULL  
+  - codechef_stats (JSONB): NULL  
+  - geeksforgeeks_stats (JSONB): NULL  
+  - hackerrank_stats (JSONB): NULL  
+  - skills (JSONB): NULL  
+  - preferred_roles (JSONB): NULL  
+  - languages_known (JSONB): NULL  
+  - readiness_score (NUMERIC(5, 2)): NOT NULL DEFAULT 0.0 
+  - last_assessment_date (TIMESTAMP): NULL  
+  - last_score_update (TIMESTAMP): NULL  
+  - profile_completion_percent (NUMERIC(5, 2)): NOT NULL DEFAULT 0.00 
+  - personal_email (VARCHAR(255)): NULL  
+  - resume_url (VARCHAR(500)): NULL  
+  - linkedin_url (VARCHAR(500)): NULL  
+  - github_url (VARCHAR(500)): NULL  
+  - portfolio_url (VARCHAR(500)): NULL  
+  - is_placement_ready (BOOLEAN): NOT NULL DEFAULT false 
+  - expected_ctc_min (NUMERIC(10, 2)): NULL  
+  - expected_ctc_max (NUMERIC(10, 2)): NULL  
+  - willing_to_relocate (BOOLEAN): NOT NULL DEFAULT true 
+  - id (UUID): NOT NULL  [PK]
+  - created_at (TIMESTAMP): NOT NULL DEFAULT now() 
+  - updated_at (TIMESTAMP): NOT NULL DEFAULT now() 
+
+TABLE: faculty
+  - user_id (UUID): NOT NULL  [FK -> users.id]
+  - employee_id (VARCHAR(50)): NOT NULL  
+  - department (VARCHAR(100)): NOT NULL  
+  - designation (VARCHAR(100)): NOT NULL  
+  - specialization (TEXT): NULL  
+  - can_create_assessments (BOOLEAN): NOT NULL  
+  - can_view_all_students (BOOLEAN): NOT NULL  
+  - can_grade_submissions (BOOLEAN): NOT NULL  
+  - office_location (VARCHAR(255)): NULL  
+  - office_hours (TEXT): NULL  
+  - id (UUID): NOT NULL  [PK]
+  - created_at (TIMESTAMP): NOT NULL DEFAULT now() 
+  - updated_at (TIMESTAMP): NOT NULL DEFAULT now() 
+
+TABLE: questions
+  - title (VARCHAR(500)): NOT NULL  
+  - slug (VARCHAR(255)): NOT NULL  
+  - difficulty (VARCHAR(6)): NOT NULL  
+  - question_type (VARCHAR(13)): NOT NULL  
+  - description (TEXT): NOT NULL  
+  - input_format (TEXT): NULL  
+  - output_format (TEXT): NULL  
+  - constraints (TEXT): NULL  
+  - sample_test_cases (JSONB): NULL  
+  - hidden_test_cases (JSONB): NULL  
+  - starter_code (JSONB): NULL  
+  - solution_code (JSONB): NULL  
+  - hints (JSONB): NULL  
+  - editorial (TEXT): NULL  
+  - max_score (INTEGER): NOT NULL  
+  - time_limit_seconds (INTEGER): NOT NULL  
+  - memory_limit_mb (INTEGER): NOT NULL  
+  - tags (JSONB): NULL  
+  - companies (JSONB): NULL  
+  - external_links (JSONB): NULL  
+  - total_submissions (INTEGER): NOT NULL  
+  - total_accepted (INTEGER): NOT NULL  
+  - acceptance_rate (NUMERIC(5, 2)): NOT NULL  
+  - is_public (BOOLEAN): NOT NULL  
+  - is_active (BOOLEAN): NOT NULL  
+  - created_by (UUID): NOT NULL  [FK -> users.id]
+  - id (UUID): NOT NULL  [PK]
+  - created_at (TIMESTAMP): NOT NULL DEFAULT now() 
+  - updated_at (TIMESTAMP): NOT NULL DEFAULT now() 
+
+TABLE: assessments
+  - title (VARCHAR(500)): NOT NULL  
+  - slug (VARCHAR(255)): NOT NULL  
+  - description (TEXT): NOT NULL  
+  - assessment_type (VARCHAR(14)): NOT NULL  
+  - duration_minutes (INTEGER): NOT NULL  
+  - start_time (TIMESTAMP): NULL  
+  - end_time (TIMESTAMP): NULL  
+  - total_marks (INTEGER): NOT NULL  
+  - passing_marks (INTEGER): NULL  
+  - is_public (BOOLEAN): NOT NULL  
+  - is_published (BOOLEAN): NOT NULL  
+  - is_active (BOOLEAN): NOT NULL  
+  - target_branches (ARRAY): NULL  
+  - target_years (ARRAY): NULL  
+  - target_students (ARRAY): NULL  
+  - max_attempts (INTEGER): NOT NULL  
+  - allow_late_submission (BOOLEAN): NOT NULL  
+  - late_penalty_percent (NUMERIC(5, 2)): NULL  
+  - enable_proctoring (BOOLEAN): NOT NULL  
+  - require_webcam (BOOLEAN): NOT NULL  
+  - track_tab_switches (BOOLEAN): NOT NULL  
+  - instructions (TEXT): NULL  
+  - rules (JSONB): NULL  
+  - total_questions (INTEGER): NOT NULL  
+  - total_attempts (INTEGER): NOT NULL  
+  - average_score (NUMERIC(5, 2)): NULL  
+  - created_by (UUID): NOT NULL  [FK -> users.id]
+  - id (UUID): NOT NULL  [PK]
+  - created_at (TIMESTAMP): NOT NULL DEFAULT now() 
+  - updated_at (TIMESTAMP): NOT NULL DEFAULT now() 
+
+TABLE: assessment_questions
+  - assessment_id (UUID): NOT NULL  [FK -> assessments.id]
+  - question_id (UUID): NOT NULL  [FK -> questions.id]
+  - question_order (INTEGER): NOT NULL  
+  - marks (INTEGER): NOT NULL  
+  - id (UUID): NOT NULL  [PK]
+  - created_at (TIMESTAMP): NOT NULL DEFAULT now() 
+  - updated_at (TIMESTAMP): NOT NULL DEFAULT now() 
+
+TABLE: assessment_attempts
+  - student_id (UUID): NOT NULL  [FK -> students.id]
+  - assessment_id (UUID): NOT NULL  [FK -> assessments.id]
+  - attempt_number (INTEGER): NOT NULL  
+  - started_at (TIMESTAMP): NOT NULL  
+  - submitted_at (TIMESTAMP): NULL  
+  - time_taken_minutes (INTEGER): NULL  
+  - total_score (NUMERIC(7, 2)): NOT NULL  
+  - max_score (INTEGER): NOT NULL  
+  - percentage (NUMERIC(5, 2)): NULL  
+  - is_passed (BOOLEAN): NULL  
+  - questions_attempted (INTEGER): NOT NULL  
+  - questions_correct (INTEGER): NOT NULL  
+  - question_scores (JSONB): NULL  
+  - proctoring_events (JSONB): NULL  
+  - tab_switch_count (INTEGER): NOT NULL  
+  - is_submitted (BOOLEAN): NOT NULL  
+  - is_graded (BOOLEAN): NOT NULL  
+  - rank (INTEGER): NULL  
+  - feedback (TEXT): NULL  
+  - id (UUID): NOT NULL  [PK]
+  - created_at (TIMESTAMP): NOT NULL DEFAULT now() 
+  - updated_at (TIMESTAMP): NOT NULL DEFAULT now() 
+
+TABLE: submissions
+  - student_id (UUID): NOT NULL  [FK -> students.id]
+  - question_id (UUID): NOT NULL  [FK -> questions.id]
+  - assessment_attempt_id (UUID): NULL  [FK -> assessment_attempts.id]
+  - language (VARCHAR(10)): NOT NULL  
+  - source_code (TEXT): NOT NULL  
+  - judge0_token (VARCHAR(100)): NULL  
+  - status (VARCHAR(14)): NOT NULL  
+  - execution_time_ms (INTEGER): NULL  
+  - memory_used_kb (INTEGER): NULL  
+  - total_test_cases (INTEGER): NOT NULL  
+  - passed_test_cases (INTEGER): NOT NULL  
+  - test_case_results (JSONB): NULL  
+  - stdout (TEXT): NULL  
+  - stderr (TEXT): NULL  
+  - compile_output (TEXT): NULL  
+  - score (NUMERIC(7, 2)): NOT NULL  
+  - max_score (INTEGER): NOT NULL  
+  - partial_credit_enabled (BOOLEAN): NOT NULL  
+  - submitted_at (TIMESTAMP): NOT NULL  
+  - evaluated_at (TIMESTAMP): NULL  
+  - id (UUID): NOT NULL  [PK]
+  - created_at (TIMESTAMP): NOT NULL DEFAULT now() 
+  - updated_at (TIMESTAMP): NOT NULL DEFAULT now() 
+
+TABLE: admin_activity_log
+  - admin_user_id (UUID): NOT NULL  [FK -> users.id]
+  - action_type (VARCHAR(100)): NOT NULL  
+  - resource_type (VARCHAR(100)): NULL  
+  - resource_id (UUID): NULL  
+  - description (TEXT): NULL  
+  - ip_address (INET): NULL  
+  - user_agent (TEXT): NULL  
+  - id (UUID): NOT NULL  [PK]
+  - created_at (TIMESTAMP): NOT NULL DEFAULT now() 
+  - updated_at (TIMESTAMP): NOT NULL DEFAULT now() 
+
+--- ENUMS ---
+aal_level: aal1, aal2, aal3
+academic_year: first, second, third, fourth
+action: INSERT, UPDATE, DELETE, TRUNCATE, ERROR
+assessment_type: practice, mock_test, placement_test, assignment
+branch_type: computer_science, information_technology, electronics, electrical, ai_ml
+buckettype: STANDARD, ANALYTICS, VECTOR
+code_challenge_method: s256, plain
+difficulty_level: easy, medium, hard
+equality_op: eq, neq, lt, lte, gt, gte, in
+factor_status: unverified, verified
+factor_type: totp, webauthn, phone
+oauth_authorization_status: pending, approved, denied, expired
+oauth_client_type: public, confidential
+oauth_registration_type: dynamic, manual
+oauth_response_type: code
+one_time_token_type: confirmation_token, reauthentication_token, recovery_token, email_change_token_new, email_change_token_current, phone_change_token
+programming_language: python, cpp, java, javascript, c, csharp, ruby, go, rust, kotlin, swift
+question_type: coding, mcq, fill_in_blank, sql, debugging
+submission_status: pending, running, accepted, wrong_answer, time_limit, memory_limit, runtime_error, compile_error, internal_error
+user_role: student, faculty, admin
+user_status: active, inactive, suspended, pending_verification
+
+--- INDEXES ---
+
+Indexes for students:
+  - idx_student_branch_year (using btree): cols=['branch', 'batch_year'], unique=False
+  - idx_student_cgpa (using btree): cols=['cgpa'], unique=False
+  - idx_student_leetcode_stats (using gin): cols=['leetcode_stats'], unique=False
+  - idx_student_placement_ready (using btree): cols=['is_placement_ready'], unique=False
+  - idx_student_readiness (using btree): cols=['readiness_score'], unique=False
+  - idx_student_skills (using gin): cols=['skills'], unique=False
+  - ix_students_batch_year (using btree): cols=['batch_year'], unique=False
+  - ix_students_branch (using btree): cols=['branch'], unique=False
+  - ix_students_roll_number (using btree): cols=['roll_number'], unique=True
+  - students_user_id_key (using btree): cols=['user_id'], unique=True
+
+Indexes for faculty:
+  - faculty_employee_id_key (using btree): cols=['employee_id'], unique=True
+  - faculty_user_id_key (using btree): cols=['user_id'], unique=True
+
+Indexes for questions:
+  - idx_question_companies (using gin): cols=['companies'], unique=False
+  - idx_question_difficulty (using btree): cols=['difficulty'], unique=False
+  - idx_question_public_active (using btree): cols=['is_public', 'is_active'], unique=False
+  - idx_question_tags (using gin): cols=['tags'], unique=False
+  - idx_question_type (using btree): cols=['question_type'], unique=False
+  - ix_questions_difficulty (using btree): cols=['difficulty'], unique=False
+  - ix_questions_slug (using btree): cols=['slug'], unique=True
+
+Indexes for assessments:
+  - idx_assessment_published (using btree): cols=['is_published', 'is_active'], unique=False
+  - idx_assessment_target_branches (using gin): cols=['target_branches'], unique=False
+  - idx_assessment_time_range (using btree): cols=['start_time', 'end_time'], unique=False
+  - idx_assessment_type (using btree): cols=['assessment_type'], unique=False
+  - ix_assessments_assessment_type (using btree): cols=['assessment_type'], unique=False
+  - ix_assessments_slug (using btree): cols=['slug'], unique=True
+
+Indexes for assessment_questions:
+  - idx_assessment_question_order (using btree): cols=['assessment_id', 'question_order'], unique=False
+  - uq_assessment_question (using btree): cols=['assessment_id', 'question_id'], unique=True
+
+Indexes for assessment_attempts:
+  - idx_attempt_score (using btree): cols=['total_score'], unique=False
+  - idx_attempt_student_assessment (using btree): cols=['student_id', 'assessment_id'], unique=False
+  - idx_attempt_submitted (using btree): cols=['is_submitted'], unique=False
+  - ix_assessment_attempts_assessment_id (using btree): cols=['assessment_id'], unique=False
+  - ix_assessment_attempts_student_id (using btree): cols=['student_id'], unique=False
+  - uq_student_assessment_attempt (using btree): cols=['student_id', 'assessment_id', 'attempt_number'], unique=True
+
+Indexes for submissions:
+  - idx_submission_status (using btree): cols=['status'], unique=False
+  - idx_submission_student_question (using btree): cols=['student_id', 'question_id'], unique=False
+  - idx_submission_submitted_at (using btree): cols=['submitted_at'], unique=False
+  - ix_submissions_assessment_attempt_id (using btree): cols=['assessment_attempt_id'], unique=False
+  - ix_submissions_question_id (using btree): cols=['question_id'], unique=False
+  - ix_submissions_status (using btree): cols=['status'], unique=False
+  - ix_submissions_student_id (using btree): cols=['student_id'], unique=False
+
+Indexes for admin_activity_log:
+  - idx_admin_activity_action_type (using btree): cols=['action_type'], unique=False
+  - idx_admin_activity_admin_user_id (using btree): cols=['admin_user_id'], unique=False
+  - idx_admin_activity_created_at (using btree): cols=['created_at'], unique=False
+  - idx_admin_activity_resource (using btree): cols=['resource_type', 'resource_id'], unique=False

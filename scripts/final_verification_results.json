@@ -1,0 +1,402 @@
+{
+  "pass": [
+    {
+      "label": "GET /api/v1/health",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /api/v1/ready",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /api/v1/live",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /api/v1/metrics",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /database/db-health",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /database/db-info (dev)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET / (root endpoint)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET  /api/auth/me (student token)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET  /api/auth/me (faculty token)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "POST /api/auth/logout",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /api/student/dashboard (mock)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /auth/me (mock-student token \u2192 200)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /auth/me (no token \u2192 401)",
+      "got": 401,
+      "exp": 401,
+      "detail": null
+    },
+    {
+      "label": "GET /auth/me (invalid token \u2192 401)",
+      "got": 401,
+      "exp": 401,
+      "detail": null
+    },
+    {
+      "label": "POST /auth/logout (200)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "POST /auth/login (missing password \u2192 422)",
+      "got": 422,
+      "exp": 422,
+      "detail": null
+    },
+    {
+      "label": "POST /auth/register (all missing \u2192 422)",
+      "got": 422,
+      "exp": 422,
+      "detail": null
+    },
+    {
+      "label": "POST /auth/register (bad role \u2192 422)",
+      "got": 422,
+      "exp": 422,
+      "detail": null
+    },
+    {
+      "label": "GET /students/me (mock-student)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /students/me (no-token \u2192 401)",
+      "got": 401,
+      "exp": 401,
+      "detail": null
+    },
+    {
+      "label": "GET /students/me/detailed",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /students/me/completion",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /students/dashboard",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /students/dashboard (paginated)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "PATCH /students/me (skills update)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "PATCH /students/me (no auth \u2192 401)",
+      "got": 401,
+      "exp": 401,
+      "detail": null
+    },
+    {
+      "label": "POST /ext-platform (leetcode valid)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "POST /ext-platform github valid",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "DELETE /ext-platform (leetcode)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /leaderboard/ (student auth)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /leaderboard/ (no auth \u2192 401)",
+      "got": 401,
+      "exp": 401,
+      "detail": null
+    },
+    {
+      "label": "GET /leaderboard/ (branch filter cs)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /leaderboard/ (invalid branch \u2192 422)",
+      "got": 422,
+      "exp": 422,
+      "detail": null
+    },
+    {
+      "label": "GET /students/ (faculty auth \u2192 200)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /students/ (student \u2192 403)",
+      "got": 403,
+      "exp": 403,
+      "detail": null
+    },
+    {
+      "label": "GET /students/ (no auth \u2192 401)",
+      "got": 401,
+      "exp": 401,
+      "detail": null
+    },
+    {
+      "label": "GET /students/ (skip=0,limit=3)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /students/ (branch filter)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /students/ (year filter)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /students/{invalid-uuid} \u2192 422",
+      "got": 422,
+      "exp": 422,
+      "detail": null
+    },
+    {
+      "label": "GET /students/{nonexistent} \u2192 404",
+      "got": 404,
+      "exp": 404,
+      "detail": null
+    },
+    {
+      "label": "GET /students/{id} as-student \u2192 403",
+      "got": 403,
+      "exp": 403,
+      "detail": null
+    },
+    {
+      "label": "POST /students/ (missing fields \u2192 422)",
+      "got": 422,
+      "exp": 422,
+      "detail": null
+    },
+    {
+      "label": "GET /faculty/me (faculty)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /faculty/me (no auth \u2192 401)",
+      "got": 401,
+      "exp": 401,
+      "detail": null
+    },
+    {
+      "label": "GET /faculty/me (student \u2192 403 or 500)",
+      "got": 403,
+      "exp": 403,
+      "detail": null
+    },
+    {
+      "label": "GET /faculty/dashboard (student token)",
+      "got": 403,
+      "exp": 403,
+      "detail": null
+    },
+    {
+      "label": "GET /faculty/ (faculty-as-admin)",
+      "got": 200,
+      "exp": 200,
+      "detail": null
+    },
+    {
+      "label": "GET /faculty/ (student \u2192 403)",
+      "got": 403,
+      "exp": 403,
+      "detail": null
+    },
+    {
+      "label": "GET /faculty/{invalid-uuid} \u2192 422",
+      "got": 422,
+      "exp": 422,
+      "detail": null
+    },
+    {
+      "label": "GET /faculty/{nonexistent} \u2192 404",
+      "got": 404,
+      "exp": 404,
+      "detail": null
+    },
+    {
+      "label": "PUT /faculty/{id} as-student \u2192 403",
+      "got": 403,
+      "exp": 403,
+      "detail": null
+    },
+    {
+      "label": "CORS",
+      "ok": true
+    }
+  ],
+  "fail": [
+    {
+      "label": "POST /api/auth/login (student)",
+      "got": 401,
+      "exp": 200,
+      "detail": {
+        "detail": "Invalid email or password"
+      }
+    },
+    {
+      "label": "POST /api/auth/login (faculty)",
+      "got": 401,
+      "exp": 200,
+      "detail": {
+        "detail": "Invalid email or password"
+      }
+    },
+    {
+      "label": "POST /api/auth/signup",
+      "got": 400,
+      "exp": 201,
+      "detail": {
+        "detail": "Password should be at least 6 characters."
+      }
+    },
+    {
+      "label": "GET /api/faculty/dashboard (mock)",
+      "got": 500,
+      "exp": 200,
+      "detail": "Internal Server Error"
+    },
+    {
+      "label": "POST /auth/login (password too short \u2192 422)",
+      "got": 401,
+      "exp": 422,
+      "detail": {
+        "detail": "Invalid email or password"
+      }
+    },
+    {
+      "label": "PATCH /students/me (cgpa > 10 \u2192 422)",
+      "got": 500,
+      "exp": 422,
+      "detail": "Internal Server Error"
+    },
+    {
+      "label": "POST /ext-platform (invalid platform \u2192 422)",
+      "got": 500,
+      "exp": 422,
+      "detail": "Internal Server Error"
+    },
+    {
+      "label": "POST /ext-platform (username too short \u2192 400)",
+      "got": 422,
+      "exp": 400,
+      "detail": {
+        "detail": "Invalid leetcode username format",
+        "error_type": "ValidationException"
+      }
+    },
+    {
+      "label": "DELETE /ext-platform (invalid \u2192 422)",
+      "got": 500,
+      "exp": 422,
+      "detail": "Internal Server Error"
+    },
+    {
+      "label": "GET /faculty/dashboard",
+      "got": 500,
+      "exp": 200,
+      "detail": "Internal Server Error"
+    },
+    {
+      "label": "PUT /faculty/{id} update-own",
+      "got": 404,
+      "exp": 200,
+      "detail": {
+        "detail": "Faculty not found"
+      }
+    }
+  ],
+  "bug": []
+}

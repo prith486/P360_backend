@@ -1,0 +1,50 @@
+Status: 200
+
+=== EXISTING FIELDS ===
+profile: True
+stats: {'totalStudents': 6, 'activeAssessments': 2, 'totalQuestions': 1791, 'pendingEvaluations': 0}
+
+=== READINESS ANALYTICS ===
+average_score: 45.59
+total_students: 6
+placement_ready_count: 0
+at_risk_count: 1
+segmentation: {'high_performers': 0, 'steady_improvers': 2, 'need_attention': 3, 'critical': 1}
+score_distribution: [{'range': '0-40', 'count': 1, 'label': 'At Risk'}, {'range': '40-55', 'count': 3, 'label': 'Need Attention'}, {'range': '55-75', 'count': 2, 'label': 'Steady'}, {'range': '75-100', 'count': 0, 'label': 'Ready'}]
+branch_performance: [{'branch': 'Information Technology', 'avg_score': 43.5, 'raw_branch': 'information_technology'}, {'branch': 'Computer Science', 'avg_score': 46.0, 'raw_branch': 'computer_science'}]
+
+=== AT-RISK STUDENTS ===
+count: 1
+  Priya Patel -- score: 28.82
+
+=== TOP PERFORMERS ===
+count: 2
+  Sneha Reddy -- score: 62.0
+  Aarav Sharma -- score: 56.35
+
+=== STUDENT RESULTS ENDPOINTS ===
+GET /students/me/attempts: 404
+GET /students/me/results: 404
+GET /assessments/my-attempts: 422
+
+GET /assessments/my: 200
+Total assessments: 42
+Attempted: 18
+  Fix Verification 1773507601 -- score: 0.0, attempt_id: 234032a9-ed42-4f47-bc7d-86f87ee62def
+  Fix Verification 1773507662 -- score: 0.0, attempt_id: ce5a6335-3b36-4b75-a2bf-22ed349cf9b6
+  yoooooo -- score: 0.0, attempt_id: 1190401b-45c8-4664-9a5b-e7c2089a0199
+  DSA Fundamentals Test -- score: 0.0, attempt_id: 01927356-4a60-496a-94fa-aa664d19c6ce
+  Test Published Now -- score: 0.0, attempt_id: 1943e624-5bc4-4ee5-8640-782be6cab909
+  Exam Attempt Test 1773490820 -- score: 0.0, attempt_id: 820a3622-02f1-4d29-a0d2-41d7596dd434
+  DSA Fundamentals Test -- score: 0.0, attempt_id: b240fcd7-9a00-42f6-953f-61d52e5a8e8d
+  lld test -- score: 0.0, attempt_id: 904faf28-8137-43e0-aab1-d9bba7ba622f
+  Exam Attempt Test 1773501415 -- score: 0.0, attempt_id: d63f47c9-05c0-4373-88a2-dee5c419de3e
+  a brand new test -- score: 0.0, attempt_id: 3cf53801-a202-4b2e-83ce-238057889358
+  Demo Test 1Demo Test 1Demo Test 1 -- score: 0.0, attempt_id: 9f37f01b-ec7a-4f67-a204-3f172a167bd1
+  a vrey new assesment -- score: 0.0, attempt_id: ba9fe588-eb01-44fc-a442-54e732f129ca
+  oops -- score: 0.0, attempt_id: 77277771-3af5-496d-96f0-f85d1f2af49c
+  🙂🙂 -- score: 0.0, attempt_id: 505f29b3-384b-4b02-946f-8ba8235bf31c
+  faang -- score: 0.0, attempt_id: de52374e-1c19-4e64-b71c-8b6ea1fd14c4
+  mayuresh -- score: 0.0, attempt_id: f58616d2-a150-4f54-84e7-4d983d136041
+  PDT -- score: 0.0, attempt_id: 7feee161-16a9-4d8e-aee1-19dd90c09c59
+  End to End Test Assessment -- score: 0.0, attempt_id: 0c89088c-429a-4593-bc4a-6fef750a8ea8

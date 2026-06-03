@@ -1,0 +1,100 @@
+﻿           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\PRIHTVIRAJ\Desktop\P360_BACKEND\placement360-backend\venv\Lib\si
+te-packages\sqlalchemy\orm\session.py", line 2247, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\PRIHTVIRAJ\Desktop\P360_BACKEND\placement360-backend\venv\Lib\si
+te-packages\sqlalchemy\orm\context.py", line 305, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\PRIHTVIRAJ\Desktop\P360_BACKEND\placement360-backend\venv\Lib\si
+te-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\PRIHTVIRAJ\Desktop\P360_BACKEND\placement360-backend\venv\Lib\si
+te-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\PRIHTVIRAJ\Desktop\P360_BACKEND\placement360-backend\venv\Lib\si
+te-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\PRIHTVIRAJ\Desktop\P360_BACKEND\placement360-backend\venv\Lib\si
+te-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\PRIHTVIRAJ\Desktop\P360_BACKEND\placement360-backend\venv\Lib\si
+te-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\PRIHTVIRAJ\Desktop\P360_BACKEND\placement360-backend\venv\Lib\si
+te-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PRIHTVIRAJ\Desktop\P360_BACKEND\placement360-backend\venv\Lib\si
+te-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\PRIHTVIRAJ\Desktop\P360_BACKEND\placement360-backend\venv\Lib\si
+te-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column 
+users.phone_number does not exist
+LINE 1: ...hed_password, users.full_name AS users_full_name, users.phon...
+                                                             ^
+
+[SQL: SELECT users.email AS users_email, users.hashed_password AS 
+users_hashed_password, users.full_name AS users_full_name, users.phone_number AS 
+users_phone_number, users.profile_picture_url AS users_profile_picture_url, 
+users.role AS users_role, users.status AS users_status, users.is_email_verified 
+AS users_is_email_verified, users.email_verified_at AS users_email_verified_at, 
+users.two_factor_enabled AS users_two_factor_enabled, users.two_factor_secret AS 
+users_two_factor_secret, users.failed_login_attempts AS 
+users_failed_login_attempts, users.account_locked_until AS 
+users_account_locked_until, users.last_login_at AS users_last_login_at, 
+users.last_login_ip AS users_last_login_ip, users.id AS users_id, 
+users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(id_1)s::UUID 
+ LIMIT %(param_1)s]
+[parameters: {'id_1': '00000000-0000-0000-0000-000000000002', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-02-11 22:14:25,197 - app.core.database - ERROR - Database session error: 401: Not authenticated
+INFO:     127.0.0.1:52875 - "GET /api/v1/students/me HTTP/1.1" 401 Unauthorized

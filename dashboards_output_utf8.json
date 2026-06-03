@@ -1,0 +1,73 @@
+﻿--- FETCHING TOKENS ---
+
+--- STUDENT DASHBOARD ---
+{
+  "success": true,
+  "data": {
+    "profile": {
+      "id": "521c96ec-9c72-4448-9f37-67c68b29ce9f",
+      "firstName": "Test",
+      "lastName": "Student",
+      "email": "test@student.com",
+      "rollNumber": "MOCK001",
+      "branch": "computer_science",
+      "year": "third",
+      "readinessScore": 75.0,
+      "avatarUrl": null
+    },
+    "stats": {
+      "problemsSolved": 0,
+      "totalProblems": 0,
+      "totalScore": 75,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "rank": 0,
+      "branchRank": 0
+    },
+    "recentSubmissions": [],
+    "upcomingAssessments": [],
+    "skillProgress": {},
+    "submissionsPagination": {
+      "total": 0,
+      "page": 1,
+      "limit": 5
+    }
+  }
+}
+
+--- FACULTY DASHBOARD ---
+{
+  "success": true,
+  "data": {
+    "profile": {
+      "id": "438058a6-4345-4906-8f7e-85023df37d10",
+      "firstName": "Test",
+      "lastName": "Faculty",
+      "email": "test@faculty.com",
+      "department": "Computer Science",
+      "designation": "Professor",
+      "avatarUrl": null
+    },
+    "stats": {
+      "totalStudents": 1,
+      "activeAssessments": 0,
+      "totalQuestions": 0,
+      "pendingEvaluations": 0
+    },
+    "recentAssessments": [],
+    "studentPerformance": {
+      "averageScore": 75.0,
+      "topPerformers": [
+        {
+          "studentId": "521c96ec-9c72-4448-9f37-67c68b29ce9f",
+          "name": "Test Student",
+          "rollNumber": "MOCK001",
+          "score": 0,
+          "avatarUrl": null
+        }
+      ],
+      "needsAttention": []
+    },
+    "recentActivity": []
+  }
+}
