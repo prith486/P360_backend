@@ -5,8 +5,9 @@
 .env.production
 .env.staging
 
-# Keep example file
+# Keep example files
 !.env.example
+!.env.production.example
 
 # Secrets
 secrets/
@@ -21,6 +22,7 @@ __pycache__/
 *.so
 .Python
 venv/
+.venv/
 env/
 ENV/
 build/
@@ -34,17 +36,35 @@ dist/
 *.swo
 .DS_Store
 
-# AI/Agent Metadata (Antigravity Workspace)
+# AI/Agent Metadata
 .agent/
 .gemini/
+.ai_*.py
+.check_ai*.py
+.real_ai*.py
 
-# Testing
+# Testing artifacts
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Logs
+# Logs and server output
 *.log
+server*.log
+uvicorn*.txt
+uvicorn*.log
+
+# Output / debug dump files
+*.txt
+!requirements.txt
+output*.json
+report_output*.json
+dashboards_output*.json
+debug_*.txt
+final_*.txt
+schema_output*.txt
+verify*.txt
+verification*.txt
 
 # Database
 *.db
@@ -53,3 +73,7 @@ htmlcov/
 
 # Alembic
 alembic/versions/*.pyc
+
+# Backup files
+*.bak
+*.backup
