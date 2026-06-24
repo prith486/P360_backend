@@ -14,7 +14,6 @@ from app.api.v1 import (
     companies,
     ai,
     database,
-    test_items,
 )
 
 api_router = APIRouter()
@@ -22,7 +21,6 @@ api_router = APIRouter()
 # Public endpoints (no authentication required)
 api_router.include_router(health.router, tags=["Health"])
 api_router.include_router(database.router, prefix="/database", tags=["Database"])
-api_router.include_router(test_items.router, prefix="/test-items", tags=["Test Items"])
 api_router.include_router(auth.router, prefix="/auth", tags=["Authentication"])
 api_router.include_router(mock_auth.router, prefix="/auth", tags=["Mock Auth (Dev Only)"])
 
